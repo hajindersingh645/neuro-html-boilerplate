@@ -16,6 +16,16 @@ ul{
  */
 body{
 	background: #fff;
+	font-family: 'Lato', sans-serif;
+}
+
+	/*
+		#SUB SECTION
+		-- Typograhpy
+	*/
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Open Sans', sans-serif;
 }
 
 /*------------------
@@ -28,7 +38,10 @@ body{
  * Description : color, image, parallax effects for all pages comes here
  */
 .bg{
-	background: transparent;
+	
+}
+.bg.bg__img{
+	padding: 80px 0;
 }
 /* Parallax Effect Using CSS Only  */
 .bg.bg__parallax{
@@ -40,6 +53,23 @@ body{
 .bg.color-alt{
 	background: #e8e8e8; 
 }
+/* Alternate Dark Background Color Setting */
+.bg.color-alt-da{
+	background: #737373;
+}
+
+	/*
+		#SUB SECTION
+		-- Image Backgrounds
+	*/
+
+#header{
+	background: url(../img/header.jpg) no-repeat;
+}
+#subscribe{
+	background: url(../img/subscribe.jpg) no-repeat;
+}
+
 
 /*------------------
 	#SECTION END
@@ -52,25 +82,87 @@ body{
  */
 .heading{
 	position: relative;
+	overflow: hidden;
 }
 .heading .title{
 	color: #616161;
 	text-transform: uppercase;
+	position: relative;
+	
 }
-.heading .title span{
-	color: #0eb5af;
+.heading .title strong{
+	display: inline-block;
+	font-weight: 400;
 }
-.heading .title::after{
+/* "alter" class used for alternate text settings
+	* and "look" class used to define what does it should look like
+*/
+.heading .title .alter{
+	color: #0eb5af;	
+}
+.heading .title .look{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+.heading .title .look::after{
 	content: "";
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	background: #0eb5af;
 	width: 100%;
-	height: 1px;
+	height: 2px;
 }
 
 
 /*------------------
 	#SECTION END
 -------------------*/
+
+
+/**
+ * Title : Header
+ * Description : page header settings here
+ */
+.header{
+	padding-bottom: 25px;
+	height: 100%;
+}
+.header .wrap.triangle{
+	position: relative;
+	height: inherit;
+}
+.header .wrap.triangle .bar{
+	width: 100%;
+    height: 0;
+    padding-left:50%;
+    padding-top: 50%;
+    overflow: hidden;
+    position: absolute;
+}
+.header .wrap.triangle .bar div{
+	width: 0;
+    height: 0;
+    margin-left:-500px;
+    margin-top:-500px;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-top: 500px solid #f2f2f2;
+}
+.header .wrap.triangle .bar.two{
+	width: 90%;
+	padding-left:50%;
+    padding-top: 40%;
+}
+.header .wrap.triangle .bar.three{
+	width: 80%;
+	padding-left:50%;
+    padding-top: 30%;
+}
+.header .wrap.triangle .bar.two div{
+	border-top-color: #e8e8e8;
+}
+.header .wrap.triangle .bar.three div{
+	border-top-color: #e0e0e0;
+}
