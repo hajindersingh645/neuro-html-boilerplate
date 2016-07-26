@@ -1,4 +1,76 @@
-/* Bootstrap Default Overwrite */
+/**
+ * Title : Bootstrap
+ * Description : bootstrap default styling to be overwritten here if any
+ */
 ul{
 	padding-left: 0;
 }
+
+/*------------------
+	#SECTION END
+-------------------*/
+
+/**
+ * Title : Global
+ * Description : global page level settings here
+ */
+body{
+	background: #fff;
+}
+
+/*------------------
+	#SECTION END
+-------------------*/
+
+
+/**
+ * Title : Background Settings
+ * Description : color, image, parallax effects for all pages comes here
+ */
+.bg{
+	background: transparent;
+}
+/* Parallax Effect Using CSS Only  */
+.bg.bg__parallax{
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+/* Alternate Background Color Setting */
+.bg.color-alt{
+	background: #e8e8e8; 
+}
+
+/*------------------
+	#SECTION END
+-------------------*/	
+
+
+/**
+ * Title : Heading Titles
+ * Description : font-size, color, spacing & different styles for heading are defined here
+ */
+.heading{
+	position: relative;
+}
+.heading .title{
+	color: #616161;
+	text-transform: uppercase;
+}
+.heading .title span{
+	color: #0eb5af;
+}
+.heading .title::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: #0eb5af;
+	width: 100%;
+	height: 1px;
+}
+
+
+/*------------------
+	#SECTION END
+-------------------*/
