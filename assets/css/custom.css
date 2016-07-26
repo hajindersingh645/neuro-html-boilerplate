@@ -18,6 +18,20 @@ body{
 	background: #fff;
 	font-family: 'Lato', sans-serif;
 }
+a{
+	color: #121212;
+	position: relative;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+}
+a:hover, a:focus{
+	color: #0eb5af;
+	text-decoration: none;
+}
+p{
+	font-family: 'Lato', sans-serif;
+}
+
 
 	/*
 		#SUB SECTION
@@ -27,6 +41,27 @@ body{
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Open Sans', sans-serif;
 }
+h4{
+	line-height: 28px;
+}
+
+/*------------------
+	#SECTION END
+-------------------*/
+
+
+/**
+ * Title : Spacing
+ * Description : spacing between different sections (all controlled here)
+ */
+
+.top-spacing-big{
+	padding-top: 45px;
+}
+.bottom-spacing-big{
+	padding-bottom: 45px;
+}
+
 
 /*------------------
 	#SECTION END
@@ -84,11 +119,13 @@ h1, h2, h3, h4, h5, h6{
 	position: relative;
 	overflow: hidden;
 }
+.heading.jumbo{
+	margin-bottom: 1.8em;
+}
 .heading .title{
 	color: #616161;
 	text-transform: uppercase;
 	position: relative;
-	
 }
 .heading .title strong{
 	display: inline-block;
@@ -114,7 +151,15 @@ h1, h2, h3, h4, h5, h6{
 	width: 100%;
 	height: 2px;
 }
+.widget{
 
+}
+.widget .widget-title{
+	background: #0eb5af;
+	color: #fff;
+	padding: 12px 15px;
+	font-weight: 300;
+}
 
 /*------------------
 	#SECTION END
@@ -166,3 +211,30 @@ h1, h2, h3, h4, h5, h6{
 .header .wrap.triangle .bar.three div{
 	border-top-color: #e0e0e0;
 }
+
+
+/*------------------
+	#SECTION END
+-------------------*/
+
+
+/**
+ * Title : Content
+ * Description : excerpt, paragrah and other content setting here
+ */
+
+.entry-content.excerpt.lg p{
+	line-height: 35px;
+	font-size: 26px;
+	font-weight: 300;
+}
+.entry-content.excerpt.sm p{
+	line-height: 25px;
+	font-size: 16px;
+	font-weight: inherit;
+}
+
+
+/*------------------
+	#SECTION END
+-------------------*/
